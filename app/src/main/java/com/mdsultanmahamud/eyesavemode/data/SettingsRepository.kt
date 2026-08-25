@@ -3,6 +3,7 @@ package com.mdsultanmahamud.eyesavemode.data
 import android.content.Context
 import android.content.SharedPreferences
 import com.mdsultanmahamud.eyesavemode.model.EyeSaveSettings
+import com.mdsultanmahamud.eyesavemode.widget.EyeSaveWidgetProvider
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -62,6 +63,7 @@ class SettingsRepository(private val context: Context) {
             apply()
         }
         _settings.value = newSettings
+        EyeSaveWidgetProvider.updateAllWidgets(context)
     }
 
     fun exportSettingsJson(): String {
@@ -117,6 +119,7 @@ class SettingsRepository(private val context: Context) {
     fun resetToDefaults() {
         prefs.edit().clear().apply()
         _settings.value = EyeSaveSettings()
+        EyeSaveWidgetProvider.updateAllWidgets(context)
     }
 
     companion object {

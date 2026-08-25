@@ -7,4 +7,12 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Home screen widget palette (mirrors ui/theme/Color.kt) -->
+    <color name="widget_bg">#FF162035</color>
+    <color name="widget_bg_border">#FF334155</color>
+    <color name="widget_amber_primary">#FFFF9F1C</color>
+    <color name="widget_text_light">#FFF1F5F9</color>
+    <color name="widget_text_muted">#FFCBD5E1</color>
+    <color name="widget_inactive">#FF4A5568</color>
 </resources>
