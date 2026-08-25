@@ -1,0 +1,6 @@
+{
+  "name": "EYE SAVE MODE",
+  "description": "Premium Android Eye Save Mode featuring advanced screen dimming, blue light color filtering, smart day/night eye guard, scheduling, and Sultan Tools.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
